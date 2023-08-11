@@ -140,12 +140,20 @@ form p span{
     color: var(--clr-Red);
 }
 
-@media (max-width:450px){
+@media (max-width:770px){
+    main{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    h1{
+        font-size: 2rem;
+    }
     .learnToCode{
         padding-left: 0;
         text-align: center;
     }
     .trial{
         padding-right: 0;
+        align-self: center;
     }
 }
