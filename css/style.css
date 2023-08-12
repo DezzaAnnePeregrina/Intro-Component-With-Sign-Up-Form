@@ -105,7 +105,7 @@ form{
     border-radius: 6px;
     box-shadow: 0px 5px 5px 0 hsla(249, 10%, 26%, 0.486);
     padding: 2rem;
-    gap: 1rem;
+    gap: 1.1rem;
 }
 
 input{
@@ -119,6 +119,32 @@ input:focus{
     border: 1px solid var(--clr-Dark-Blue);
 }
 
+input:valid{
+    border: 1px solid var(--clr-Green);
+}
+
+input:invalid{
+    border: 1px solid var(--clr-Grayish-Blue);
+}
+
+.message{
+    font-size: .6rem;
+    font-style: italic;
+    align-self: flex-end;
+    color: red;
+}
+
+.hidden{
+    display: none;
+}
+
+.errorState{
+    background: url(/images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position: 98%;
+}
+
 button{
     background-color: var(--clr-Green);
     height: 40px;
@@ -128,6 +154,7 @@ button{
     text-transform: uppercase;
     color: white;
     outline: none;
+    cursor: pointer;
 }
 
 form p{
@@ -138,6 +165,7 @@ form p{
 
 form p span{
     color: var(--clr-Red);
+    cursor: pointer;
 }
 
 @media (max-width:770px){

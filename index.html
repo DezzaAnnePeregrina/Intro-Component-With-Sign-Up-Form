@@ -24,15 +24,21 @@
       <div class="sevenDayFree">
         <p><span>Try it free 7 days</span> then $20/mo. thereafter</p>
       </div>
-      <form class="flex fd-c">
-        <input type="text" placeholder="First Name" required>
-        <input type="text" placeholder="Last Name" required>
-        <input type="email" placeholder="Email Address" required>
-        <input type="password" placeholder="Password" required>
+      <form class="flex fd-c" novalidate>
+        <input class="inputs fname " type="text" placeholder="First Name" required>
+        <span class="hidden message">First Name cannot be empty</span>
+        <input class="inputs lname " type="text" placeholder="Last Name" required>
+        <span class="hidden message">Last Name cannot be empty</span>
+        <input class="inputs email " type="email" placeholder="Email Address" required>
+        <span class="hidden message">Looks like this is not an email</span>
+        <input class="inputs pass " type="password" placeholder="Password" required>
+        <span class="hidden message">Password cannot be empty</span>
+        <p class="validity__Message"></p>
         <button type="submit">Claim your free trial </button>
         <p>By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
       </form>
     </div>
   </main>
+  <script src="js/main.js"></script>
 </body>
 </html>
